@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+<!-- load static -->
+
+{% load static %}
+<!-- Content block -->
+
+{% block PAGE_CONTENT %}
+<div class="container-fluid">
+  {% for hdata in homedata %}
+
+  <img class="img-fluid" src="{{ hdata.home_image.url }}" alt="" />
+  <div>
+    <h1>{{ hdata.head_text }}</h1>
+  </div>
+  <div class="container">{{ hdata.home_desc|safe }}</div>
+  {% endfor %}
+</div>
+{% endblock PAGE_CONTENT %}
