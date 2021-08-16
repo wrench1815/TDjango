@@ -18,6 +18,11 @@
 - Now cd into to Project Directory in terminal and run `poetry install` if Poetry is installed on system else use `pip install -r requirements.txt`
 - Now run `python manage.py runserver` or setup Django debug config as if using VSCode
 
+## Default Admin Credentials
+
+**Username**: admin <br/>
+**Password**: test@123
+
 # <span stye="color: red">Warning! The `SECRET_KEY` in Application is supposed to be a demo key, never use such weak SECRETS in Production or Hard Code them</span>
 
 Btw, TDjango means TestDajngo :laughing:
