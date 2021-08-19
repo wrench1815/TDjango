@@ -1,6 +1,6 @@
 # TDjango
 
-## Note: This is just a demo project to test how Django Ckeditor can work
+## Note: This is just a demo project to test how Django Ckeditor can work and it's moving to another phase where its becoming my Playground
 
 ### Usage
 
