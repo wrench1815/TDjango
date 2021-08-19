@@ -4,15 +4,35 @@
 {% load static %}
 <!-- Content block -->
 
-{% block PAGE_CONTENT %}
-<div class="container-fluid">
-  {% for hdata in homedata %}
+{% block PAGE_CONTENT %} {% for hdata in homedata %}
 
-  <img class="img-fluid" src="{{ hdata.home_image.url }}" alt="" />
-  <div>
-    <h1>{{ hdata.head_text }}</h1>
+<div class="bg-image d-flex justify-content-center align-items-end vh-100"
+  style="background-image: url('{{ hdata.home_image.url }}')">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 col-md-9">
+        <div class="
+            p-5
+            me-lg-5 me-md-5
+            d-inline-block
+            rounded-3
+            border border-dark
+            mb-5
+            shadow
+          " style="
+            backdrop-filter: blur(4px);
+            background-color: rgba(38, 38, 38, 0.4);
+          ">
+          <h1 class="text-white">{{ hdata.head_text }}</h1>
+        </div>
+      </div>
+      <div class="col"></div>
+    </div>
   </div>
-  <div class="container">{{ hdata.home_desc|safe }}</div>
+</div>
+<div class="container">
+  <div class="">{{ hdata.home_desc|safe }}</div>
   {% endfor %}
 </div>
+
 {% endblock PAGE_CONTENT %}

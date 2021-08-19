@@ -5,6 +5,7 @@
 ### Usage
 
 - If using Poetry use `Poetry install` to download all the packages else use `pip install -r requirements.txt`
+- Time to collect static files run `python manage.py collectstatic` in terminal to collect the static files
 - Now in terminal run `python manage.py runserver` and open the url shown in Terminal
 
 ### Do it my way
@@ -16,6 +17,7 @@
   - on Linux use `source EnvName\Scripts\Activate`
 
 - Now cd into to Project Directory in terminal and run `poetry install` if Poetry is installed on system else use `pip install -r requirements.txt`
+- Run `python manage.py collectstatic` to collect all Static files for the Project
 - Now run `python manage.py runserver` or setup Django debug config as if using VSCode
 
 ## Default Admin Credentials

@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from .models import HomeModel
+from .models import HomeModel, AboutModel
 
 # Create your views here.
 
@@ -12,4 +12,7 @@ def home(request):
 
 
 def about(request):
-    return render(request, 'portfolio/about.html')
+    aboutdata = AboutModel.objects.all()
+
+    context = {'aboutdata': aboutdata}
+    return render(request, 'portfolio/about.html', context)
